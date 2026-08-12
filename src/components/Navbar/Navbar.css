@@ -19,7 +19,7 @@
     align-items:center;
     z-index:1000;
 
-    background:rgba(15,23,42,.55);
+    background:rgba(5,11,18,.72);
     backdrop-filter:blur(14px);
     -webkit-backdrop-filter:blur(14px);
 
@@ -27,8 +27,8 @@
 }
 
 .navbar.sticky{
-    background:rgba(10,10,10,.92);
-    box-shadow:0 8px 25px rgba(139,92,246,.25);
+    background:rgba(5,11,18,.92);
+    box-shadow:0 8px 25px var(--glow);
 }
 
 .logo{
@@ -38,7 +38,7 @@
 }
 
 .logo span{
-    color:#8b5cf6;
+    color:var(--accent);
 }
 
 .nav-links{
@@ -54,7 +54,7 @@
 
 .nav-links a{
     text-decoration:none;
-    color:#fff;
+    color:var(--text-primary);
     font-size:16px;
     font-weight:500;
     transition:.3s;
@@ -62,11 +62,11 @@
 }
 
 .nav-links a:hover{
-    color:#8b5cf6;
+    color:var(--accent);
 }
 
 .active-link{
-    color:#8b5cf6 !important;
+    color:var(--accent) !important;
 }
 
 .resume-btn{
@@ -78,9 +78,9 @@
 
     border-radius:30px;
 
-    background:#8b5cf6;
+    background:var(--accent);
 
-    color:#fff !important;
+    color:#050B12 !important;
 
     transition:.3s;
 }
@@ -89,9 +89,9 @@
 
     transform:translateY(-3px);
 
-    background:#a855f7;
+    background:var(--accent-light);
 
-    box-shadow:0 0 20px #8b5cf6;
+    box-shadow:0 0 20px var(--glow);
 
 }
 
@@ -99,7 +99,7 @@
 
     display:none;
 
-    color:white;
+    color:var(--text-primary);
 
     font-size:28px;
 
@@ -131,7 +131,7 @@ left:-100%;
 
 width:100%;
 
-background:#111827;
+background:var(--surface);
 
 display:flex;
 
@@ -181,7 +181,7 @@ width:0;
 
 height:2px;
 
-background:#8b5cf6;
+background:var(--accent);
 
 transition:.3s;
 
@@ -205,7 +205,7 @@ transition:.3s;
 
 transform:scale(1.08);
 
-text-shadow:0 0 15px #8b5cf6;
+text-shadow:0 0 15px var(--glow);
 
 }
 
@@ -213,7 +213,7 @@ text-shadow:0 0 15px #8b5cf6;
 
 .navbar{
 
-border-bottom:1px solid rgba(255,255,255,.08);
+border-bottom:1px solid var(--border);
 
 }
 
@@ -226,7 +226,7 @@ scroll-behavior:smooth;
 }
 .menu-icon{
     display:none;
-    color:white;
+    color:var(--text-primary);
     font-size:28px;
     cursor:pointer;
     border:0;
@@ -234,7 +234,7 @@ scroll-behavior:smooth;
 }
 
 .nav-links .active{
-    color:#8b5cf6;
+    color:var(--accent);
 }
 
 @media(max-width:900px){
@@ -252,7 +252,7 @@ scroll-behavior:smooth;
     top:80px;
     right:-100%;
     width:250px;
-    background:#11111d;
+    background:var(--surface);
     flex-direction:column;
     padding:30px;
     border-radius:15px;

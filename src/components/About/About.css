@@ -1,6 +1,6 @@
 .about{
     padding:100px 8%;
-    background:#0a0a15;
+    background:var(--section-background);
 }
 
 .about-container{
@@ -15,11 +15,11 @@
 
 .section-title h2{
     font-size:42px;
-    color:white;
+    color:var(--text-primary);
 }
 
 .section-title span{
-    color:#8b5cf6;
+    color:var(--accent);
     font-size:18px;
 }
 
@@ -31,13 +31,13 @@
 }
 
 .about-text h3{
-    color:white;
+    color:var(--text-primary);
     font-size:32px;
     margin-bottom:25px;
 }
 
 .about-text p{
-    color:#c9c9c9;
+    color:var(--text-secondary);
     line-height:1.9;
     margin-bottom:20px;
     font-size:17px;
@@ -55,27 +55,28 @@
     border-radius:20px;
     text-align:center;
     transition:.4s;
-    border:1px solid rgba(139,92,246,.15);
+    border:1px solid var(--border);
 }
 
 .card:hover{
     transform:translateY(-10px);
-    box-shadow:0 0 25px rgba(139,92,246,.45);
+    border-color:var(--border-hover);
+    box-shadow:0 0 25px var(--glow);
 }
 
 .card svg{
     font-size:40px;
-    color:#8b5cf6;
+    color:var(--accent);
     margin-bottom:15px;
 }
 
 .card h4{
-    color:white;
+    color:var(--text-primary);
     margin-bottom:10px;
 }
 
 .card p{
-    color:#bfbfbf;
+    color:var(--text-secondary);
 }
 
 @media(max-width:900px){

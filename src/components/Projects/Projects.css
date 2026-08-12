@@ -1,6 +1,6 @@
 .projects{
     padding:100px 8%;
-    background:#050510;
+    background:var(--background);
 }
 
 .projects-container{
@@ -20,11 +20,12 @@
     border-radius:20px;
     overflow:hidden;
     transition:.4s;
-    border:1px solid rgba(139,92,246,.2);
+    border:1px solid var(--border);
 }
 
 .project-card:hover{
-    box-shadow:0 0 35px rgba(139,92,246,.35);
+    border-color:var(--border-hover);
+    box-shadow:0 0 35px var(--glow);
 }
 
 .project-card img{
@@ -43,13 +44,13 @@
 }
 
 .project-content h3{
-    color:#fff;
+    color:var(--text-primary);
     margin-bottom:15px;
     font-size:24px;
 }
 
 .project-content p{
-    color:#c9c9c9;
+    color:var(--text-secondary);
     line-height:1.7;
     margin-bottom:20px;
 }
@@ -63,8 +64,9 @@
 
 .tech-stack span{
     padding:8px 14px;
-    background:#8b5cf6;
-    color:white;
+    background:rgba(0,217,255,.14);
+    border:1px solid var(--border);
+    color:var(--accent-light);
     border-radius:30px;
     font-size:14px;
 }
@@ -80,13 +82,15 @@
     text-decoration:none;
     padding:12px;
     border-radius:30px;
-    color:white;
-    background:#1f1f35;
+    color:var(--text-primary);
+    background:var(--button-background);
+    border:1px solid var(--border);
     transition:.3s;
 }
 
 .project-buttons a:hover{
-    background:#8b5cf6;
+    background:var(--accent);
+    color:#050B12;
 }
 
 @media(max-width:768px){

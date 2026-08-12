@@ -1,10 +1,16 @@
 :root{
---background:#0f172a;
---surface:#172033;
---text-primary:#ffffff;
---text-secondary:#cbd5e1;
---accent:#8b5cf6;
---accent-hover:#a855f7;
+--background:#050B12;
+--section-background:#08121C;
+--surface:#0D1924;
+--button-background:#0A111A;
+--text-primary:#F8FAFC;
+--text-secondary:#94A3B8;
+--accent:#00D9FF;
+--accent-light:#67E8F9;
+--accent-hover:#67E8F9;
+--border:rgba(0,217,255,.18);
+--border-hover:rgba(0,217,255,.45);
+--glow:rgba(0,217,255,.25);
 }
 
 *{
@@ -23,6 +29,14 @@ color:var(--text-primary);
 
 a{
 text-decoration:none;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible{
+outline:2px solid var(--accent-light);
+outline-offset:3px;
 }
 
 section{

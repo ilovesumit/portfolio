@@ -2,7 +2,7 @@
 
     padding:100px 8%;
 
-    background:#050510;
+    background:var(--background);
 
 }
 
@@ -24,7 +24,7 @@
 
 .section-title h2{
 
-    color:white;
+    color:var(--text-primary);
 
     font-size:42px;
 
@@ -32,7 +32,7 @@
 
 .section-title span{
 
-    color:#8b5cf6;
+    color:var(--accent);
 
     font-size:18px;
 
@@ -58,7 +58,7 @@
 
     transition:.4s;
 
-    border:1px solid rgba(139,92,246,.15);
+    border:1px solid var(--border);
 
 }
 
@@ -66,7 +66,8 @@
 
     transform:translateY(-8px);
 
-    box-shadow:0 0 30px rgba(139,92,246,.35);
+    border-color:var(--border-hover);
+    box-shadow:0 0 30px var(--glow);
 
 }
 
@@ -82,13 +83,13 @@
 
 .skill-header h3{
 
-    color:white;
+    color:var(--text-primary);
 
 }
 
 .skill-header span{
 
-    color:#8b5cf6;
+    color:var(--accent);
 
     font-weight:600;
 
@@ -100,7 +101,7 @@
 
     height:12px;
 
-    background:#2b2b3d;
+    background:var(--button-background);
 
     border-radius:50px;
 
@@ -116,9 +117,9 @@
 
     background:linear-gradient(
     90deg,
-    #7c3aed,
-    #a855f7,
-    #c084fc
+    var(--accent),
+    #20CBE4,
+    var(--accent-light)
     );
 
 }
