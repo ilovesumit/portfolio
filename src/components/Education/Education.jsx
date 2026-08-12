@@ -72,11 +72,12 @@ function Education() {
 
               <h4>Rajarshi University</h4>
 
-              <span>Currently Preparing</span>
+              <span>Currently Studying</span>
 
               <p>
-                Preparing for the BSc CSIT entrance examination while improving
-                my programming and web development skills.
+                Currently pursuing a BSc CSIT degree at Rajarshi University,
+                with a focus on programming, web development, and emerging
+                technologies.
               </p>
             </div>
           </motion.div>
