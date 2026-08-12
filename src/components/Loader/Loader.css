@@ -1,0 +1,71 @@
+.loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#050510;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+}
+
+.loader h1{
+
+    color:white;
+
+    font-size:60px;
+
+    margin-bottom:30px;
+
+}
+
+.loading-bar{
+
+    width:260px;
+
+    height:8px;
+
+    background:#222;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+.loading-fill{
+
+    width:0;
+
+    height:100%;
+
+    background:#8b5cf6;
+
+    animation:load 2s linear forwards;
+
+}
+
+@keyframes load{
+
+from{
+
+width:0;
+
+}
+
+to{
+
+width:100%;
+
+}
+
+}
